@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://mapbox.bintray.com/mapbox' }
+        maven { url 'https://dl.bintray.com/camerakit/camerakit-android'}
+    }
+}
+
+rootProject.name = "TestCameraApplication"
+include ':app'
