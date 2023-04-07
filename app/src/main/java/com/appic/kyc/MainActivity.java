@@ -1,4 +1,4 @@
-package com.example.testcameraapplication;
+package com.appic.kyc;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,23 +6,18 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
-import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.theartofdev.edmodo.cropper.CropImageView;
 
@@ -53,7 +48,9 @@ public class MainActivity extends AppCompatActivity implements CameraListners {
         iv_multi_img_default.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                uploadImage();
+//                uploadImage();
+                Intent intent = new Intent(MainActivity.this,NewMainActivity.class);
+                startActivity(intent);
             }
         });
 

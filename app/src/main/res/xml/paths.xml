@@ -7,7 +7,7 @@
         path="." />
     <external-files-path
         name="external_files"
-        path="DCIM/Gulf" />
+        path="DCIM/Appic" />
     <cache-path
         name="cache"
         path="." />
@@ -16,7 +16,7 @@
         path="." />
     <files-path
         name="files"
-        path="DCIM/Gulf" />
+        path="DCIM/Appic" />
     <root-path name="root" path="."/>
 
 

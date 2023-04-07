@@ -1,4 +1,4 @@
-package com.example.testcameraapplication;
+package com.appic.kyc;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.example.testcameraapplication;
+package com.appic.kyc;
 
 
 import android.annotation.SuppressLint;
@@ -24,7 +24,6 @@ import com.theartofdev.edmodo.cropper.CropImageView;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 
 import static android.os.Build.VERSION_CODES.M;
@@ -60,7 +59,7 @@ public class CameraActivity {
         // wrap File object into a content provider
         // required for API >= 24
         // See https://guides.codepath.com/android/Sharing-Content-with-Intents#sharing-files-with-api-24-or-higher
-        Uri fileProvider = FileProvider.getUriForFile(mContext, "com.example.testcameraapplication.fileprovider", photoFile);
+        Uri fileProvider = FileProvider.getUriForFile(mContext, "com.appic.kyc.fileprovider", photoFile);
         intent.putExtra(MediaStore.EXTRA_OUTPUT, fileProvider);
 
         // If you call startActivityForResult() using an intent that no app can handle, your app will crash.

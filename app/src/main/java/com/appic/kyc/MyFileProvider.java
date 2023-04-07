@@ -1,4 +1,4 @@
-package com.example.testcameraapplication;
+package com.appic.kyc;
 
 import androidx.core.content.FileProvider;
 
